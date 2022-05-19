@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="request_category" table="x_sohd3_ppb_operat_ppb_operating_log" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>request_category</element>
+            <name>x_sohd3_ppb_operat_ppb_operating_log</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>charles_admin</sys_created_by>
+            <sys_created_on>2021-08-05 20:29:18</sys_created_on>
+            <sys_id>c678812d1bfd74107fd2cbfa234bcbf8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>request_category</sys_name>
+            <sys_package display_value="PPB Operating Log" source="x_sohd3_ppb_operat">a0a441251bfd74107fd2cbfa234bcba7</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="PPB Operating Log">a0a441251bfd74107fd2cbfa234bcba7</sys_scope>
+            <sys_update_name>sys_choice_x_sohd3_ppb_operat_ppb_operating_log_request_category</sys_update_name>
+            <sys_updated_by>charles_admin</sys_updated_by>
+            <sys_updated_on>2021-08-05 20:29:18</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>request_category</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>B&amp;F/GOV Request and/or Submittals</label>
+            <language>en</language>
+            <name>x_sohd3_ppb_operat_ppb_operating_log</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>charles_admin</sys_created_by>
+            <sys_created_on>2021-08-05 20:29:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4a78812d1bfd74107fd2cbfa234bcbf7</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>charles_admin</sys_updated_by>
+            <sys_updated_on>2021-08-10 17:20:50</sys_updated_on>
+            <value>b_f_gov_request_and_or_submittals</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>request_category</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Contracts</label>
+            <language>en</language>
+            <name>x_sohd3_ppb_operat_ppb_operating_log</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>charles_admin</sys_created_by>
+            <sys_created_on>2021-08-05 20:29:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4678c12d1bfd74107fd2cbfa234bcb01</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>charles_admin</sys_updated_by>
+            <sys_updated_on>2021-08-10 17:20:50</sys_updated_on>
+            <value>contracts</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>request_category</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>DSM Updates</label>
+            <language>en</language>
+            <name>x_sohd3_ppb_operat_ppb_operating_log</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>charles_admin</sys_created_by>
+            <sys_created_on>2021-08-05 20:29:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0e78c12d1bfd74107fd2cbfa234bcb09</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>charles_admin</sys_updated_by>
+            <sys_updated_on>2021-08-10 17:20:50</sys_updated_on>
+            <value>dsm_updates</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>request_category</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Federal Form</label>
+            <language>en</language>
+            <name>x_sohd3_ppb_operat_ppb_operating_log</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>charles_admin</sys_created_by>
+            <sys_created_on>2021-08-05 20:29:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c278c12d1bfd74107fd2cbfa234bcb12</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>charles_admin</sys_updated_by>
+            <sys_updated_on>2021-08-10 17:20:50</sys_updated_on>
+            <value>federal_form</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>request_category</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Invoices</label>
+            <language>en</language>
+            <name>x_sohd3_ppb_operat_ppb_operating_log</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>charles_admin</sys_created_by>
+            <sys_created_on>2021-08-05 20:29:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8a78c12d1bfd74107fd2cbfa234bcb1a</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>charles_admin</sys_updated_by>
+            <sys_updated_on>2021-08-10 17:20:50</sys_updated_on>
+            <value>invoices</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>request_category</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Legislative Inquiries and/or Submittals</label>
+            <language>en</language>
+            <name>x_sohd3_ppb_operat_ppb_operating_log</name>
+            <sequence>5</sequence>
+            <synonyms/>
+            <sys_created_by>charles_admin</sys_created_by>
+            <sys_created_on>2021-08-05 20:29:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4278c12d1bfd74107fd2cbfa234bcb23</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>charles_admin</sys_updated_by>
+            <sys_updated_on>2021-08-10 17:20:50</sys_updated_on>
+            <value>legislative_inquiries_and_or_submittals</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>request_category</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Others</label>
+            <language>en</language>
+            <name>x_sohd3_ppb_operat_ppb_operating_log</name>
+            <sequence>6</sequence>
+            <synonyms/>
+            <sys_created_by>charles_admin</sys_created_by>
+            <sys_created_on>2021-08-05 20:29:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0a78c12d1bfd74107fd2cbfa234bcb2b</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>charles_admin</sys_updated_by>
+            <sys_updated_on>2021-08-10 17:20:50</sys_updated_on>
+            <value>others</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>request_category</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Personnel Request and/or Submittals</label>
+            <language>en</language>
+            <name>x_sohd3_ppb_operat_ppb_operating_log</name>
+            <sequence>7</sequence>
+            <synonyms/>
+            <sys_created_by>charles_admin</sys_created_by>
+            <sys_created_on>2021-08-05 20:29:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ce78c12d1bfd74107fd2cbfa234bcb33</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>charles_admin</sys_updated_by>
+            <sys_updated_on>2021-08-10 17:20:50</sys_updated_on>
+            <value>personnel_request_and_or_submittals</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>request_category</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Purchase Requisitions/Purchase Orders</label>
+            <language>en</language>
+            <name>x_sohd3_ppb_operat_ppb_operating_log</name>
+            <sequence>8</sequence>
+            <synonyms/>
+            <sys_created_by>charles_admin</sys_created_by>
+            <sys_created_on>2021-08-05 20:29:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9678c12d1bfd74107fd2cbfa234bcb3c</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>charles_admin</sys_updated_by>
+            <sys_updated_on>2021-08-10 17:20:50</sys_updated_on>
+            <value>purchase_requisitions_purchase_orders</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>request_category</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Reorg Proposals</label>
+            <language>en</language>
+            <name>x_sohd3_ppb_operat_ppb_operating_log</name>
+            <sequence>9</sequence>
+            <synonyms/>
+            <sys_created_by>charles_admin</sys_created_by>
+            <sys_created_on>2021-08-10 17:20:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ce4dc6071b713010eef0cb72604bcba6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>charles_admin</sys_updated_by>
+            <sys_updated_on>2021-08-10 17:20:50</sys_updated_on>
+            <value>reorg_proposals</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>request_category</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Special Studies</label>
+            <language>en</language>
+            <name>x_sohd3_ppb_operat_ppb_operating_log</name>
+            <sequence>10</sequence>
+            <synonyms/>
+            <sys_created_by>charles_admin</sys_created_by>
+            <sys_created_on>2021-08-05 20:29:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5e78c12d1bfd74107fd2cbfa234bcb44</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>charles_admin</sys_updated_by>
+            <sys_updated_on>2021-08-10 17:20:50</sys_updated_on>
+            <value>special_studies</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>request_category</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Staff Studies</label>
+            <language>en</language>
+            <name>x_sohd3_ppb_operat_ppb_operating_log</name>
+            <sequence>11</sequence>
+            <synonyms/>
+            <sys_created_by>charles_admin</sys_created_by>
+            <sys_created_on>2021-08-05 20:29:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1678c12d1bfd74107fd2cbfa234bcb4d</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>charles_admin</sys_updated_by>
+            <sys_updated_on>2021-08-10 17:20:50</sys_updated_on>
+            <value>staff_studies</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>request_category</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>T-205</label>
+            <language>en</language>
+            <name>x_sohd3_ppb_operat_ppb_operating_log</name>
+            <sequence>12</sequence>
+            <synonyms/>
+            <sys_created_by>charles_admin</sys_created_by>
+            <sys_created_on>2021-08-05 20:29:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>da78c12d1bfd74107fd2cbfa234bcb55</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>charles_admin</sys_updated_by>
+            <sys_updated_on>2021-08-10 17:20:50</sys_updated_on>
+            <value>t_205</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

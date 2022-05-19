@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="5ed21d2d1b31b4107fd2cbfa234bcbe4" sys_domain="global" table="x_sohd3_ppb_operat_ppb_operating_log" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>charles_admin</sys_created_by>
+            <sys_created_on>2021-08-05 21:14:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>16d21d2d1b31b4107fd2cbfa234bcbe9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_sohd3_ppb_operat_ppb_operating_log" name="x_sohd3_ppb_operat_ppb_operating_log" sys_domain="global" view="Default view">5ed21d2d1b31b4107fd2cbfa234bcbe4</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_sohd3_ppb_operat_ppb_operating_log" sys_domain="global" view="Default view">19fd45251b31b4107fd2cbfa234bcb52</sys_ui_section>
+            <sys_updated_by>charles_admin</sys_updated_by>
+            <sys_updated_on>2021-08-05 21:14:39</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>charles_admin</sys_created_by>
+            <sys_created_on>2021-08-05 21:31:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>78c6d1e51bfdf010eef0cb72604bcbdb</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_sohd3_ppb_operat_ppb_operating_log" name="x_sohd3_ppb_operat_ppb_operating_log" sys_domain="global" view="Default view">5ed21d2d1b31b4107fd2cbfa234bcbe4</sys_ui_form>
+            <sys_ui_section caption="Form Type Fields" display_value="Form Type Fields" name="x_sohd3_ppb_operat_ppb_operating_log" sys_domain="global" view="Default view">7cc6d1e51bfdf010eef0cb72604bcbd7</sys_ui_section>
+            <sys_updated_by>charles_admin</sys_updated_by>
+            <sys_updated_on>2021-08-05 21:31:46</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>charles_admin</sys_created_by>
+            <sys_created_on>2021-08-05 23:20:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0e9f69651bb13410eef0cb72604bcb05</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_sohd3_ppb_operat_ppb_operating_log" name="x_sohd3_ppb_operat_ppb_operating_log" sys_domain="global" view="Default view">5ed21d2d1b31b4107fd2cbfa234bcbe4</sys_ui_form>
+            <sys_ui_section caption="Contract Information" display_value="Contract Information" name="x_sohd3_ppb_operat_ppb_operating_log" sys_domain="global" view="Default view">ce9f29651bb13410eef0cb72604bcb6c</sys_ui_section>
+            <sys_updated_by>charles_admin</sys_updated_by>
+            <sys_updated_on>2021-08-05 23:20:15</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>charles_admin</sys_created_by>
+            <sys_created_on>2021-08-05 21:14:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>16d21d2d1b31b4107fd2cbfa234bcbea</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_sohd3_ppb_operat_ppb_operating_log" name="x_sohd3_ppb_operat_ppb_operating_log" sys_domain="global" view="Default view">5ed21d2d1b31b4107fd2cbfa234bcbe4</sys_ui_form>
+            <sys_ui_section caption="Status and Review" display_value="Status and Review" name="x_sohd3_ppb_operat_ppb_operating_log" sys_domain="global" view="Default view">dad21d2d1b31b4107fd2cbfa234bcb95</sys_ui_section>
+            <sys_updated_by>charles_admin</sys_updated_by>
+            <sys_updated_on>2021-08-05 23:20:15</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>4</position>
+            <sys_created_by>charles_admin</sys_created_by>
+            <sys_created_on>2021-08-10 17:48:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>23a3dac31bb13010eef0cb72604bcb5a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_sohd3_ppb_operat_ppb_operating_log" name="x_sohd3_ppb_operat_ppb_operating_log" sys_domain="global" view="Default view">5ed21d2d1b31b4107fd2cbfa234bcbe4</sys_ui_form>
+            <sys_ui_section caption="Additional Information, if available" display_value="Additional Information, if available" name="x_sohd3_ppb_operat_ppb_operating_log" sys_domain="global" view="Default view">e7a39ac31bb13010eef0cb72604bcbcc</sys_ui_section>
+            <sys_updated_by>charles_admin</sys_updated_by>
+            <sys_updated_on>2021-08-10 17:48:48</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_sohd3_ppb_operat_ppb_operating_log</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>charles_admin</sys_created_by>
+            <sys_created_on>2021-08-05 21:14:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5ed21d2d1b31b4107fd2cbfa234bcbe4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_sohd3_ppb_operat_ppb_operating_log</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="PPB Operating Log" source="x_sohd3_ppb_operat">a0a441251bfd74107fd2cbfa234bcba7</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="PPB Operating Log">a0a441251bfd74107fd2cbfa234bcba7</sys_scope>
+            <sys_update_name>sys_ui_form_sections_5ed21d2d1b31b4107fd2cbfa234bcbe4</sys_update_name>
+            <sys_updated_by>charles_admin</sys_updated_by>
+            <sys_updated_on>2021-08-05 21:14:39</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

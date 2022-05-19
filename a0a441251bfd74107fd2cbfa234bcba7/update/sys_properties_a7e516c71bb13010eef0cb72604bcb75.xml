@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>PPB Operating Log activity formatter fields</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>glide.ui.x_sohd3_ppb_operat_ppb_operating_log_activity.fields</name>
+        <read_roles/>
+        <suffix>x_sohd3_ppb_operat</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-10 17:58:37</sys_created_on>
+        <sys_id>a7e516c71bb13010eef0cb72604bcb75</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>glide.ui.x_sohd3_ppb_operat_ppb_operating_log_activity.fields</sys_name>
+        <sys_package display_value="PPB Operating Log" source="x_sohd3_ppb_operat">a0a441251bfd74107fd2cbfa234bcba7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PPB Operating Log">a0a441251bfd74107fd2cbfa234bcba7</sys_scope>
+        <sys_update_name>sys_properties_a7e516c71bb13010eef0cb72604bcb75</sys_update_name>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-10 17:58:37</sys_updated_on>
+        <type>string</type>
+        <value>assigned_to,cmdb_ci,state,opened_by,work_notes,comments,*Attachments*,sys_created_on,sys_created_by</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=a7e516c71bb13010eef0cb72604bcb75"/>
+</record_update>

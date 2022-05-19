@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>This script on change will determine what is displayed.</description>
+        <field>request_category</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>PPB On Request Category</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    // 
+    //Purpose : Code to Display data based on request category
+    //Status : In Development
+    //Method : This will only execute on change to the request category choice field. 
+	//         to see the choice go to the variable.
+    //
+    if (isLoading || newValue === '') {
+        return;
+    }
+   
+    var selection = g_form.getValue('request_category');
+	//
+	// Do the show in contract calculation information if form is not contracts or federal forms.
+	//
+    if ((selection === 'contracts') || (selection === 'federal_form')) {
+        g_form.setSectionDisplay('contract_information', true);
+    } else g_form.setSectionDisplay('contract_information', false);
+//
+// Based on the choice in the request catagory fields will show or not show in the form displayed.
+//
+    if ((selection === 'b_f_gov_request_and_or_submittals') || (selection === 'dsm_updates') || (selection === 'legislative_inquiries_and_or_submittals') || (selection === 'others') || (selection === 'personnel_request_and_or_submittals') || (selection === 'special_studies') || (selection === 'reorg_proposals')) {
+        g_form.setDisplay('u_program_id_1', false);
+        g_form.setDisplay('u_appropriation_fund_symbol_1', false);
+        g_form.setDisplay('u_object_code_1', false);
+        g_form.setDisplay('u_amount_1', false);
+        g_form.setDisplay('u_contract_no_1', false);
+        if (selection === 'reorg_proposals') g_form.setDisplay('u_approved_date_1', true);
+        else g_form.setDisplay('u_approved_date_1', false);
+        g_form.setDisplay('u_reference_1', false);
+    } else {
+        g_form.setDisplay('u_program_id_1', true);
+        g_form.setDisplay('u_appropriation_fund_symbol_1', true);
+        g_form.setDisplay('u_object_code_1', true);
+        g_form.setDisplay('u_amount_1', true);
+        g_form.setDisplay('u_contract_no_1', true);
+        g_form.setDisplay('u_approved_date_1', true);
+        g_form.setDisplay('u_reference_1', true);
+    }
+    //
+    //Debug statement used to test client script
+    // alert(getMessage('Test change value selection  '+ selection));
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-09 21:30:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e82af57e1b3df4107fd2cbfa234bcbaf</sys_id>
+        <sys_mod_count>40</sys_mod_count>
+        <sys_name>PPB On Request Category</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="PPB Operating Log" source="x_sohd3_ppb_operat">a0a441251bfd74107fd2cbfa234bcba7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PPB Operating Log">a0a441251bfd74107fd2cbfa234bcba7</sys_scope>
+        <sys_update_name>sys_script_client_e82af57e1b3df4107fd2cbfa234bcbaf</sys_update_name>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-21 18:23:12</sys_updated_on>
+        <table>x_sohd3_ppb_operat_ppb_operating_log</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

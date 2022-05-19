@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row">
+    <sp_row action="INSERT_OR_UPDATE">
+        <class_name/>
+        <order>2</order>
+        <sp_column/>
+        <sp_container display_value="PPB Informational Site - Container 1">8061f91a1bcef0107fd2cbfa234bcbbe</sp_container>
+        <sys_class_name>sp_row</sys_class_name>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-20 19:14:25</sys_created_on>
+        <sys_id>db270a9e1b4234107fd2cbfa234bcbf1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>2</sys_name>
+        <sys_package display_value="PPB Operating Log" source="x_sohd3_ppb_operat">a0a441251bfd74107fd2cbfa234bcba7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PPB Operating Log">a0a441251bfd74107fd2cbfa234bcba7</sys_scope>
+        <sys_update_name>sp_row_db270a9e1b4234107fd2cbfa234bcbf1</sys_update_name>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-20 19:14:25</sys_updated_on>
+    </sp_row>
+</record_update>

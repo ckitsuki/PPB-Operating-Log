@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_icon">
+    <sys_sg_icon action="INSERT_OR_UPDATE">
+        <icon>{"Shape":"Circle","FontName":"now-mobile-icons","Value":"f2b9","FontColor":"#293e40","BackgroundColor":"#293e40","Name":"icon-Address-Book"}</icon>
+        <name>icon-Address-Book</name>
+        <sys_class_name>sys_sg_icon</sys_class_name>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-05 20:29:39</sys_created_on>
+        <sys_id>c388c12d1bfd74107fd2cbfa234bcbcb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>icon-Address-Book</sys_name>
+        <sys_package display_value="PPB Operating Log" source="x_sohd3_ppb_operat">a0a441251bfd74107fd2cbfa234bcba7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PPB Operating Log">a0a441251bfd74107fd2cbfa234bcba7</sys_scope>
+        <sys_update_name>sys_sg_icon_c388c12d1bfd74107fd2cbfa234bcbcb</sys_update_name>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-05 20:29:39</sys_updated_on>
+        <type>font</type>
+    </sys_sg_icon>
+</record_update>

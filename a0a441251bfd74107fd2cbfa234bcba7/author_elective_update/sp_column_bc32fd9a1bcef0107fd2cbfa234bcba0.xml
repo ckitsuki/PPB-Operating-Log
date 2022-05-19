@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column">
+    <sp_column action="DELETE">
+        <class_name/>
+        <order>1</order>
+        <size>4</size>
+        <size_lg/>
+        <size_sm/>
+        <size_xs/>
+        <sp_row display_value="2">b032f95a1bcef0107fd2cbfa234bcba4</sp_row>
+        <sys_class_name>sp_column</sys_class_name>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-20 17:42:46</sys_created_on>
+        <sys_id>bc32fd9a1bcef0107fd2cbfa234bcba0</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="PPB Operating Log" source="x_sohd3_ppb_operat">a0a441251bfd74107fd2cbfa234bcba7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PPB Operating Log">a0a441251bfd74107fd2cbfa234bcba7</sys_scope>
+        <sys_update_name>sp_column_bc32fd9a1bcef0107fd2cbfa234bcba0</sys_update_name>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-20 18:55:09</sys_updated_on>
+    </sp_column>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="PPB Operating Log">a0a441251bfd74107fd2cbfa234bcba7</application>
+        <file_path/>
+        <instance_id>6612c0221b0724547d9d2f8dee4bcb10</instance_id>
+        <instance_name>hidotdev</instance_name>
+        <name>sp_column_bc32fd9a1bcef0107fd2cbfa234bcba0</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>1</order><size>4</size><size_lg/><size_sm/><size_xs/><sp_row display_value="2">b032f95a1bcef0107fd2cbfa234bcba4</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>charles_admin</sys_created_by><sys_created_on>2021-08-20 17:42:46</sys_created_on><sys_id>bc32fd9a1bcef0107fd2cbfa234bcba0</sys_id><sys_mod_count>2</sys_mod_count><sys_name>1</sys_name><sys_package display_value="PPB Operating Log" source="x_sohd3_ppb_operat">a0a441251bfd74107fd2cbfa234bcba7</sys_package><sys_policy/><sys_scope display_value="PPB Operating Log">a0a441251bfd74107fd2cbfa234bcba7</sys_scope><sys_update_name>sp_column_bc32fd9a1bcef0107fd2cbfa234bcba0</sys_update_name><sys_updated_by>charles_admin</sys_updated_by><sys_updated_on>2021-08-20 18:55:09</sys_updated_on></sp_column></record_update>]]></payload>
+        <payload_hash>689102844</payload_hash>
+        <record_name>1</record_name>
+        <reverted_from/>
+        <source>fd9596761b3138107fd2cbfa234bcbf7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-20 18:55:09</sys_created_on>
+        <sys_id>5dc286561b4234107fd2cbfa234bcbaf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17b64eab9cf0000001</sys_recorded_at>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-20 18:55:09</sys_updated_on>
+        <type>Column</type>
+        <update_guid>55c28656af423410b5ae10fa32a13daf</update_guid>
+        <update_guid_history>55c28656af423410b5ae10fa32a13daf:689102844,34b2c656434234106f5926a9709d61d1:-62721862,f832fd9a1dcef010fa0392830d7fd4a1:-814546568</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="1">a537469e1b4234107fd2cbfa234bcb54</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-20 19:14:34</sys_created_on>
+        <sys_db_object display_value="" name="sp_column">sp_column</sys_db_object>
+        <sys_id>28a299b253c34b3cb6c4f12b283a5ce4</sys_id>
+        <sys_metadata>bc32fd9a1bcef0107fd2cbfa234bcba0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="PPB Operating Log" source="x_sohd3_ppb_operat">a0a441251bfd74107fd2cbfa234bcba7</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="PPB Operating Log">a0a441251bfd74107fd2cbfa234bcba7</sys_scope>
+        <sys_scope_delete display_value="">4863f4c9f58948dca4fe0653a6291d64</sys_scope_delete>
+        <sys_update_name>sp_column_bc32fd9a1bcef0107fd2cbfa234bcba0</sys_update_name>
+        <sys_update_version display_value="sp_column_bc32fd9a1bcef0107fd2cbfa234bcba0">5dc286561b4234107fd2cbfa234bcbaf</sys_update_version>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-20 19:14:34</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

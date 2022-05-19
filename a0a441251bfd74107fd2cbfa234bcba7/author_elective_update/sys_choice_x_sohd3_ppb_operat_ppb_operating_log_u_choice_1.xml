@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_choice_1" table="x_sohd3_ppb_operat_ppb_operating_log" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_choice_1</element>
+            <name>x_sohd3_ppb_operat_ppb_operating_log</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>charles_admin</sys_created_by>
+            <sys_created_on>2021-08-05 21:20:54</sys_created_on>
+            <sys_id>75441da11bfdf010eef0cb72604bcbcb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_choice_1</sys_name>
+            <sys_package display_value="PPB Operating Log" source="x_sohd3_ppb_operat">a0a441251bfd74107fd2cbfa234bcba7</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="PPB Operating Log">a0a441251bfd74107fd2cbfa234bcba7</sys_scope>
+            <sys_update_name>sys_choice_x_sohd3_ppb_operat_ppb_operating_log_u_choice_1</sys_update_name>
+            <sys_updated_by>charles_admin</sys_updated_by>
+            <sys_updated_on>2021-08-05 21:20:54</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_choice_1</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Administration</label>
+            <language>en</language>
+            <name>x_sohd3_ppb_operat_ppb_operating_log</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>charles_admin</sys_created_by>
+            <sys_created_on>2021-08-05 21:20:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3d441da11bfdf010eef0cb72604bcbca</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>charles_admin</sys_updated_by>
+            <sys_updated_on>2021-08-05 21:20:54</sys_updated_on>
+            <value>administration</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_choice_1</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Airports</label>
+            <language>en</language>
+            <name>x_sohd3_ppb_operat_ppb_operating_log</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>charles_admin</sys_created_by>
+            <sys_created_on>2021-08-05 21:20:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>39441da11bfdf010eef0cb72604bcbd2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>charles_admin</sys_updated_by>
+            <sys_updated_on>2021-08-05 21:20:54</sys_updated_on>
+            <value>airports</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_choice_1</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Harbors</label>
+            <language>en</language>
+            <name>x_sohd3_ppb_operat_ppb_operating_log</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>charles_admin</sys_created_by>
+            <sys_created_on>2021-08-05 21:20:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f5441da11bfdf010eef0cb72604bcbd9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>charles_admin</sys_updated_by>
+            <sys_updated_on>2021-08-05 21:20:54</sys_updated_on>
+            <value>harbors</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_choice_1</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Highways</label>
+            <language>en</language>
+            <name>x_sohd3_ppb_operat_ppb_operating_log</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>charles_admin</sys_created_by>
+            <sys_created_on>2021-08-05 21:20:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b5441da11bfdf010eef0cb72604bcbe0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>charles_admin</sys_updated_by>
+            <sys_updated_on>2021-08-05 21:20:54</sys_updated_on>
+            <value>highways</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_choice_1</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Other</label>
+            <language>en</language>
+            <name>x_sohd3_ppb_operat_ppb_operating_log</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>charles_admin</sys_created_by>
+            <sys_created_on>2021-08-05 21:20:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>75441da11bfdf010eef0cb72604bcbe7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>charles_admin</sys_updated_by>
+            <sys_updated_on>2021-08-05 21:20:54</sys_updated_on>
+            <value>other</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_choice_1</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Legislature</label>
+            <language>en</language>
+            <name>x_sohd3_ppb_operat_ppb_operating_log</name>
+            <sequence>5</sequence>
+            <synonyms/>
+            <sys_created_by>charles_admin</sys_created_by>
+            <sys_created_on>2021-08-05 21:20:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>35441da11bfdf010eef0cb72604bcbee</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>charles_admin</sys_updated_by>
+            <sys_updated_on>2021-08-05 21:20:55</sys_updated_on>
+            <value>legislature</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

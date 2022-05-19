@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="task" label="PPB Operating Log" max_length="40" name="x_sohd3_ppb_operat_ppb_operating_log" sizeclass="6" type="collection">
+        <element default="PPB Log Leads" label="PPB Log Leads Group" max_length="32" name="ppb_log_leads_group" reference="sys_user_group" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Request Category" max_length="40" name="request_category" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="B&amp;F/GOV Request and/or Submittals" sequence="0" value="b_f_gov_request_and_or_submittals"/>
+                <element inactive_on_update="false" label="Contracts" sequence="1" value="contracts"/>
+                <element inactive_on_update="false" label="DSM Updates" sequence="2" value="dsm_updates"/>
+                <element inactive_on_update="false" label="Federal Form" sequence="3" value="federal_form"/>
+                <element inactive_on_update="false" label="Invoices" sequence="4" value="invoices"/>
+                <element inactive_on_update="false" label="Legislative Inquiries and/or Submittals" sequence="5" value="legislative_inquiries_and_or_submittals"/>
+                <element inactive_on_update="false" label="Others" sequence="6" value="others"/>
+                <element inactive_on_update="false" label="Personnel Request and/or Submittals" sequence="7" value="personnel_request_and_or_submittals"/>
+                <element inactive_on_update="false" label="Purchase Requisitions/Purchase Orders" sequence="8" value="purchase_requisitions_purchase_orders"/>
+                <element inactive_on_update="false" label="Reorg Proposals" sequence="9" value="reorg_proposals"/>
+                <element inactive_on_update="false" label="Special Studies" sequence="10" value="special_studies"/>
+                <element inactive_on_update="false" label="Staff Studies" sequence="11" value="staff_studies"/>
+                <element inactive_on_update="false" label="T-205" sequence="12" value="t_205"/>
+            </choice>
+        </element>
+        <element label="Action Completed" max_length="40" name="u_action_completed_1" type="boolean"/>
+        <element label="Amount" max_length="20" name="u_amount_1" type="price"/>
+        <element attributes="edge_encryption_enabled=true" label="Appropriation Fund Symbol" max_length="40" name="u_appropriation_fund_symbol_1" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Approved Date" max_length="40" name="u_approved_date_1" type="glide_date"/>
+        <element label="Action Completed" max_length="40" name="u_boolean_8" type="boolean"/>
+        <element label="Calculate Totals" max_length="40" name="u_calculate_totals_1" type="boolean"/>
+        <element attributes="omit_sys_original=true" label="Combined Total" max_length="20" name="u_combined_total_1" type="currency"/>
+        <element attributes="omit_sys_original=true" label="Combined Total Basic" max_length="20" name="u_combined_total_basic_1" type="currency"/>
+        <element attributes="omit_sys_original=true" label="Combined Total Extra" max_length="20" name="u_combined_total_extra_1" type="currency"/>
+        <element attributes="omit_sys_original=true" label="Combined Total Other" max_length="20" name="u_combined_total_other_1" type="currency"/>
+        <element attributes="omit_sys_original=true" label="Combined Total Other" max_length="20" name="u_combine_total_other_1" read_only="true" type="currency"/>
+        <element attributes="omit_sys_original=true" label="Contract Amount" max_length="20" name="u_contract_amount_1" type="currency"/>
+        <element attributes="edge_encryption_enabled=true" label="Contract Number" max_length="40" name="u_contract_no_1" type="string"/>
+        <element attributes="omit_sys_original=true" label="Contract Amount" max_length="20" name="u_currency_1" type="currency"/>
+        <element attributes="omit_sys_original=true" calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Combined Total Basic" max_length="20" name="u_currency_10" read_only="true" type="currency"/>
+        <element attributes="omit_sys_original=true" label="Combined Total Extra" max_length="20" name="u_currency_11" read_only="true" type="currency"/>
+        <element attributes="omit_sys_original=true" label="Combined Total Other" max_length="20" name="u_currency_12" read_only="true" type="currency"/>
+        <element attributes="omit_sys_original=true" label="Combined Total" max_length="20" name="u_currency_13" read_only="true" type="currency"/>
+        <element attributes="omit_sys_original=true" label="State Share Basic" max_length="20" name="u_currency_2" type="currency"/>
+        <element attributes="omit_sys_original=true" label="Federal Share Basic" max_length="20" name="u_currency_3" type="currency"/>
+        <element attributes="omit_sys_original=true" label="State Share Extra" max_length="20" name="u_currency_4" type="currency"/>
+        <element attributes="omit_sys_original=true" label="Federal Share Extra" max_length="20" name="u_currency_5" type="currency"/>
+        <element attributes="omit_sys_original=true" label="State Share Other" max_length="20" name="u_currency_6" type="currency"/>
+        <element attributes="omit_sys_original=true" label="State Share Total" max_length="20" name="u_currency_7" read_only="true" type="currency"/>
+        <element attributes="omit_sys_original=true" label="Federal Share Other" max_length="20" name="u_currency_8" type="currency"/>
+        <element attributes="omit_sys_original=true" label="Federal Share Total" max_length="20" name="u_currency_9" read_only="true" type="currency"/>
+        <element attributes="edge_encryption_enabled=true" label="Date &amp; Office Comments" max_length="150" name="u_date_and_office_comments_1" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Date Received" max_length="40" name="u_date_received_1" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Division" max_length="40" name="u_division_1" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Administration" sequence="0" value="administration"/>
+                <element inactive_on_update="false" label="Airports" sequence="1" value="airports"/>
+                <element inactive_on_update="false" label="Harbors" sequence="2" value="harbors"/>
+                <element inactive_on_update="false" label="Highways" sequence="3" value="highways"/>
+                <element inactive_on_update="false" label="Other" sequence="4" value="other"/>
+                <element inactive_on_update="false" label="Legislature" sequence="5" value="legislature"/>
+            </choice>
+        </element>
+        <element label="e-Signed" max_length="40" name="u_esigned_1" type="boolean"/>
+        <element attributes="omit_sys_original=true" label="**Federal Share Basic" max_length="20" name="u_federal_share_basic_1" type="currency"/>
+        <element attributes="omit_sys_original=true" label="**Federal Share Extra" max_length="20" name="u_federal_share_extra_1" type="currency"/>
+        <element attributes="omit_sys_original=true" label="**Federal Share Other" max_length="20" name="u_federal_share_other_1" type="currency"/>
+        <element attributes="omit_sys_original=true" label="Federal Share Total" max_length="20" name="u_federal_share_total_1" type="currency"/>
+        <element attributes="edge_encryption_enabled=true" label="Funding Authorities" max_length="40" name="u_funding_authorities_1" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Date of Office Action" max_length="40" name="u_glide_date_6" type="glide_date"/>
+        <element label="Reviewers Comments" max_length="65536" name="u_html_9" type="html"/>
+        <element attributes="edge_encryption_enabled=true" label="Incoming Document Letter No." max_length="100" name="u_incomming_document_letter_no_1" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Letter Date" max_length="40" name="u_letter_date_1" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Letter Number" max_length="40" name="u_letter_number_1" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Object Code" max_length="40" name="u_object_code_1" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Office" max_length="40" name="u_office_1" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="PPB Suspense Date" max_length="40" name="u_ppb_suspense_date_1" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Program ID" max_length="40" name="u_program_id_1" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Project Number" max_length="40" name="u_project_number_1" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Reference" max_length="100" name="u_reference_1" type="string"/>
+        <element label="Reviewers Comments" max_length="65536" name="u_reviewer_comments_1" type="html"/>
+        <element attributes="omit_sys_original=true" label="**State Share Basic" max_length="20" name="u_state_share_basic_1" type="currency"/>
+        <element attributes="omit_sys_original=true" label="**State Share Extra" max_length="20" name="u_state_share_extra_1" type="currency"/>
+        <element attributes="omit_sys_original=true" label="**State Share Other" max_length="20" name="u_state_share_other_1" type="currency"/>
+        <element attributes="omit_sys_original=true" label="State Share Total" max_length="20" name="u_state_share_total_1" type="currency"/>
+        <element attributes="edge_encryption_enabled=true" label="Project Number" max_length="40" name="u_string_6" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Office" max_length="40" name="u_string_7" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Funding Authorities" max_length="40" name="u_string_8" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Date &amp; Office" max_length="150" name="u_string_9" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Subject" max_length="100" name="u_subject_1" type="string"/>
+    </element>
+</database>

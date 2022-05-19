@@ -1,0 +1,1334 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build>glide-rome-06-23-2021__patch0-07-07-2021_07-15-2021_1403.zip</compiler_build>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>ppb_log_analyst_assigned_work_flow</internal_name>
+        <label_cache>[{"name":"Updated_1.current.assigned_to.email","label":"Trigger➛PPB Operating Log Record➛Analyst Assigned to➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"4045fc5c-5583-4514-b8b4-59bff8d09db2.email","label":"1➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4045fc5c-5583-4514-b8b4-59bff8d09db2.__action_status__","label":"1➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4045fc5c-5583-4514-b8b4-59bff8d09db2.__dont_treat_as_error__","label":"1➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Updated_1.current","label":"Trigger➛PPB Operating Log Record","reference":"x_sohd3_ppb_operat_ppb_operating_log","reference_display":"PPB Operating Log","type":"reference","base_type":"reference","attributes":{}},{"name":"Updated_1.current.assigned_to","label":"Trigger➛PPB Operating Log Record➛Analyst Assigned to","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_sohd3_ppb_operat_ppb_operating_log","column_name":"assigned_to"},{"name":"Updated_1.current.number","label":"Trigger➛PPB Operating Log Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_sohd3_ppb_operat_ppb_operating_log","column_name":"number"},{"name":"Updated_1.current.sys_id","label":"Trigger➛PPB Operating Log Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_sohd3_ppb_operat_ppb_operating_log","column_name":"sys_id"}]</label_cache>
+        <master_snapshot>79a3778f1b3d3010eef0cb72604bcb9e</master_snapshot>
+        <name>PPB Log Analyst Assigned Work Flow</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id>ed594b6a1b86b410eef0cb72604bcbcf</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-11 00:26:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b3be23471b3d3010eef0cb72604bcb46</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_name>PPB Log Analyst Assigned Work Flow</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="PPB Operating Log" source="x_sohd3_ppb_operat">a0a441251bfd74107fd2cbfa234bcba7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PPB Operating Log">a0a441251bfd74107fd2cbfa234bcba7</sys_scope>
+        <sys_update_name>sys_hub_flow_b3be23471b3d3010eef0cb72604bcb46</sys_update_name>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-21 18:41:58</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=b3be23471b3d3010eef0cb72604bcb46"/>
+    <sys_variable_value action="delete_multiple" query="document_key=b3be23471b3d3010eef0cb72604bcb46"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_sohd3_ppb_operat_ppb_operating_log">assigned_toVALCHANGES<item endquery="false" field="assigned_to" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>false</on_insert>
+        <on_update>true</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-21 18:41:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ed594b6a1b86b410eef0cb72604bcbcf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="PPB Operating Log">a0a441251bfd74107fd2cbfa234bcba7</sys_scope>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-21 18:41:58</sys_updated_on>
+        <table>x_sohd3_ppb_operat_ppb_operating_log</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"table":"sys_trigger_runner_mapping","id":"f9594b6a1b86b410eef0cb72604bcbd0","name":"trigger_runner","type":"java.util.Collections$UnmodifiableMap"}</data>
+        <identifier>b3be23471b3d3010eef0cb72604bcb46</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-21 18:41:58</sys_created_on>
+        <sys_id>f9594b6a1b86b410eef0cb72604bcbd0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-21 18:41:58</sys_updated_on>
+        <trigger display_value="">ed594b6a1b86b410eef0cb72604bcbcf</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_json_chunk action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAGXLWwqAIBBA0b3MdytwKxGD5fggGUFHLKK99yAo6Pce7ga5MtqYGgYGBaOeZpdTZQPdTc0TYy2UMYYioPrh0wuJBHbXl8T/jpc1r48mRlqE2JA5u9WxEOwH5v2lw4YAAAA=</data>
+        <document_id>f9594b6a1b86b410eef0cb72604bcbd0</document_id>
+        <field>trigger_runner</field>
+        <length>144</length>
+        <position>0</position>
+        <source_table>sys_trigger_runner_mapping</source_table>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-21 18:41:58</sys_created_on>
+        <sys_id>35594b6a1b86b410eef0cb72604bcbd1</sys_id>
+    </sys_json_chunk>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=b3be23471b3d3010eef0cb72604bcb46^sys_idNOT INf9594b6a1b86b410eef0cb72604bcbd0"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=b3be23471b3d3010eef0cb72604bcb46^sys_idNOT IN0fd1778b1b3d3010eef0cb72604bcb7d"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment>This only runs when the Analyst assigned changes and for it to be unique</comment>
+        <display_text/>
+        <flow display_value="PPB Log Analyst Assigned Work Flow">b3be23471b3d3010eef0cb72604bcb46</flow>
+        <name>Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-11 00:40:16</sys_created_on>
+        <sys_id>0fd1778b1b3d3010eef0cb72604bcb7d</sys_id>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-21 18:41:58</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=0fd1778b1b3d3010eef0cb72604bcb7d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>0fd1778b1b3d3010eef0cb72604bcb7d</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-11 00:40:16</sys_created_on>
+        <sys_id>0fd1778b1b3d3010eef0cb72604bcb7f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-11 00:40:16</sys_updated_on>
+        <value>x_sohd3_ppb_operat_ppb_operating_log</value>
+        <variable display_value="Table">1dda12e0c31322002841b63b12d3aea8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>0fd1778b1b3d3010eef0cb72604bcb7d</document_key>
+        <order>101</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-11 00:40:26</sys_created_on>
+        <sys_id>25e1f78b1b3d3010eef0cb72604bcbef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-11 00:40:26</sys_updated_on>
+        <value>unique_changes</value>
+        <variable display_value="Run Trigger">c19523d8c31932002841b63b12d3aea1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>0fd1778b1b3d3010eef0cb72604bcb7d</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-11 00:40:16</sys_created_on>
+        <sys_id>43d1778b1b3d3010eef0cb72604bcb7f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-11 00:40:16</sys_updated_on>
+        <value>assigned_toVALCHANGES</value>
+        <variable display_value="Condition">bb9adea0c31322002841b63b12d3ae67</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_bb695e60c31322002841b63b12d3aea5^id=0fd1778b1b3d3010eef0cb72604bcb7d"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=b3be23471b3d3010eef0cb72604bcb46"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=b3be23471b3d3010eef0cb72604bcb46^sys_idNOT INf3bea3471b3d3010eef0cb72604bcbce"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>b3be23471b3d3010eef0cb72604bcb46</id>
+        <name>PPB Log Analyst Assigned Work Flow</name>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-11 00:26:40</sys_created_on>
+        <sys_id>f3bea3471b3d3010eef0cb72604bcbce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-11 00:26:40</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=f3bea3471b3d3010eef0cb72604bcbce"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=b3be23471b3d3010eef0cb72604bcb46^sys_idNOT IN32d1778b1b3d3010eef0cb72604bcb75,36d1778b1b3d3010eef0cb72604bcb6e,f2d1738b1b3d3010eef0cb72604bcbd7"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="PPB Log Analyst Assigned Work Flow">b3be23471b3d3010eef0cb72604bcb46</model>
+        <model_id>b3be23471b3d3010eef0cb72604bcb46</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_b3be23471b3d3010eef0cb72604bcb46</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-11 00:40:15</sys_created_on>
+        <sys_id>32d1778b1b3d3010eef0cb72604bcb75</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="PPB Operating Log">a0a441251bfd74107fd2cbfa234bcba7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-21 18:41:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FD1d594b6aac86b41016e2024056d73e7d,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="PPB Log Analyst Assigned Work Flow">b3be23471b3d3010eef0cb72604bcb46</model>
+        <model_id>b3be23471b3d3010eef0cb72604bcb46</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_b3be23471b3d3010eef0cb72604bcb46</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-11 00:40:15</sys_created_on>
+        <sys_id>36d1778b1b3d3010eef0cb72604bcb6e</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="PPB Operating Log">a0a441251bfd74107fd2cbfa234bcba7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-21 18:41:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="PPB Log Analyst Assigned Work Flow">b3be23471b3d3010eef0cb72604bcb46</model>
+        <model_id>b3be23471b3d3010eef0cb72604bcb46</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_b3be23471b3d3010eef0cb72604bcb46</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-11 00:40:15</sys_created_on>
+        <sys_id>f2d1738b1b3d3010eef0cb72604bcbd7</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="PPB Operating Log">a0a441251bfd74107fd2cbfa234bcba7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-21 18:41:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=b3be23471b3d3010eef0cb72604bcb46"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b3be23471b3d3010eef0cb72604bcb46"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=b3be23471b3d3010eef0cb72604bcb46^sys_idNOT IN2d33374f1b3d3010eef0cb72604bcb76"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent/>
+        <comment>Sends analyst assigned an email when it gets assigned to the person.</comment>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="PPB Log Analyst Assigned Work Flow">b3be23471b3d3010eef0cb72604bcb46</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-11 00:46:11</sys_created_on>
+        <sys_id>2d33374f1b3d3010eef0cb72604bcb76</sys_id>
+        <sys_mod_count>50</sys_mod_count>
+        <sys_scope display_value="PPB Operating Log">a0a441251bfd74107fd2cbfa234bcba7</sys_scope>
+        <sys_updated_by>clarita.b.hironaka@hawaii.gov</sys_updated_by>
+        <sys_updated_on>2021-08-27 23:05:04</sys_updated_on>
+        <ui_id>4045fc5c-5583-4514-b8b4-59bff8d09db2</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2d33374f1b3d3010eef0cb72604bcb76"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2d33374f1b3d3010eef0cb72604bcb76</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-11 00:46:11</sys_created_on>
+        <sys_id>7133374f1b3d3010eef0cb72604bcba1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-11 00:46:11</sys_updated_on>
+        <value>You have a PPB Log Task assigned to you</value>
+        <variable display_value="Subject">5d806bf4a70323008299b39f087901ec</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2d33374f1b3d3010eef0cb72604bcb76</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-11 00:46:11</sys_created_on>
+        <sys_id>bd33374f1b3d3010eef0cb72604bcba0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-11 00:46:11</sys_updated_on>
+        <value>x_sohd3_ppb_operat_ppb_operating_log</value>
+        <variable display_value="Table">19806bf4a70323008299b39f087901d4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2d33374f1b3d3010eef0cb72604bcb76</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-11 00:46:11</sys_created_on>
+        <sys_id>f133374f1b3d3010eef0cb72604bcba0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-11 00:46:11</sys_updated_on>
+        <value/>
+        <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=2d33374f1b3d3010eef0cb72604bcb76"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>2d33374f1b3d3010eef0cb72604bcb76</id>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-11 00:46:11</sys_created_on>
+        <sys_id>3933374f1b3d3010eef0cb72604bcb9f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-11 00:47:03</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>&lt;p data-tinymcerootblock=""&gt;Dear Recipient,&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;A PPB Log is waiting for your review.&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Record ID&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:1bfd28b6-3948-4595-abe4-ea8add7ae051}}"&gt;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:1bfd28b6-3948-4595-abe4-ea8add7ae051}}"&gt;&lt;span class="data-pill-content-container"&gt;Trigger&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;PPB Operating Log Record&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;Number&lt;button id="transform_function_facade_1bfd28b6-3948-4595-abe4-ea8add7ae051" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Go to Link&lt;/p&gt;
+&lt;p class="MsoNormal"&gt;&amp;nbsp;https://hidotdev.service-now.com/nav_to.do?uri=%2Fx_sohd3_ppb_operat_ppb_operating_log.do%3Fsys_id%3D&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:136f13ff-49b7-4457-9253-4bff53e61e93}}"&gt;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:136f13ff-49b7-4457-9253-4bff53e61e93}}"&gt;&lt;span class="data-pill-content-container"&gt;Trigger&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;PPB Operating Log Record&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;Sys ID&lt;button id="transform_function_facade_136f13ff-49b7-4457-9253-4bff53e61e93" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;%26sysparm_record_target%3Dx_sohd3_ppb_operat_ppb_operating_log%26sysparm_record_row%3D6%26sysparm_record_rows%3D6%26sysparm_record_list%3DORDERBYnumber&lt;/p&gt;
+&lt;p class="MsoNormal" style="box-sizing: border-box; margin: 0px 0px 9px; overflow-wrap: break-word; color: #343d47; font-family: OpenSans, SourceSansPro, 'Helvetica Neue', Arial; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="box-sizing: border-box; margin: 0px 0px 9px; overflow-wrap: break-word; color: #343d47; font-family: OpenSans, SourceSansPro, 'Helvetica Neue', Arial; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;" data-tinymcerootblock=""&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="box-sizing: border-box; margin: 0px 0px 9px; overflow-wrap: break-word; color: #343d47; font-family: OpenSans, SourceSansPro, 'Helvetica Neue', Arial; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;" data-tinymcerootblock=""&gt;Regards,&lt;/p&gt;
+&lt;p style="box-sizing: border-box; margin: 0px 0px 9px; overflow-wrap: break-word; color: #343d47; font-family: OpenSans, SourceSansPro, 'Helvetica Neue', Arial; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"&gt;PPB System&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>2d33374f1b3d3010eef0cb72604bcb76</id>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-11 00:46:11</sys_created_on>
+        <sys_id>7133374f1b3d3010eef0cb72604bcba0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-11 00:46:11</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>2d33374f1b3d3010eef0cb72604bcb76</id>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-11 00:46:11</sys_created_on>
+        <sys_id>fd33374f1b3d3010eef0cb72604bcb9e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-13 19:57:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Updated_1.current.assigned_to}} </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>2d33374f1b3d3010eef0cb72604bcb76</id>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-11 00:46:11</sys_created_on>
+        <sys_id>f933374f1b3d3010eef0cb72604bcb9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-11 00:46:11</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>2d33374f1b3d3010eef0cb72604bcb76</id>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-11 00:46:11</sys_created_on>
+        <sys_id>bd33374f1b3d3010eef0cb72604bcb9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-11 00:46:11</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2d33374f1b3d3010eef0cb72604bcb76"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2d33374f1b3d3010eef0cb72604bcb76"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=b3be23471b3d3010eef0cb72604bcb46"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=b3be23471b3d3010eef0cb72604bcb46"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=b3be23471b3d3010eef0cb72604bcb46^sys_idNOT IN7533374f1b3d3010eef0cb72604bcba3,bd33374f1b3d3010eef0cb72604bcba3,ea63fb4f1b3d3010eef0cb72604bcbe2"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>b3be23471b3d3010eef0cb72604bcb46</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.number}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-11 00:46:11</sys_created_on>
+        <sys_id>7533374f1b3d3010eef0cb72604bcba3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="PPB Operating Log">a0a441251bfd74107fd2cbfa234bcba7</sys_scope>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-11 00:46:11</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>b6d0ca20-5cf0-4302-a402-d7abd31984c1</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>b3be23471b3d3010eef0cb72604bcb46</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.sys_id}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-11 00:46:11</sys_created_on>
+        <sys_id>bd33374f1b3d3010eef0cb72604bcba3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="PPB Operating Log">a0a441251bfd74107fd2cbfa234bcba7</sys_scope>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-11 00:46:11</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>136f13ff-49b7-4457-9253-4bff53e61e93</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>b3be23471b3d3010eef0cb72604bcb46</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.number}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-11 00:47:03</sys_created_on>
+        <sys_id>ea63fb4f1b3d3010eef0cb72604bcbe2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="PPB Operating Log">a0a441251bfd74107fd2cbfa234bcba7</sys_scope>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-11 00:47:03</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>1bfd28b6-3948-4595-abe4-ea8add7ae051</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=b3be23471b3d3010eef0cb72604bcb46"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_b3be23471b3d3010eef0cb72604bcb46^sys_idNOT IN3ad1778b1b3d3010eef0cb72604bcb6c,43d1778b1b3d3010eef0cb72604bcb7a,bad1778b1b3d3010eef0cb72604bcb73"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b3be23471b3d3010eef0cb72604bcb46</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-11 00:40:15</sys_created_on>
+        <sys_id>3ad1778b1b3d3010eef0cb72604bcb6c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="PPB Operating Log" source="x_sohd3_ppb_operat">a0a441251bfd74107fd2cbfa234bcba7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PPB Operating Log">a0a441251bfd74107fd2cbfa234bcba7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-11 00:40:15</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b3be23471b3d3010eef0cb72604bcb46</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-11 00:40:15</sys_created_on>
+        <sys_id>43d1778b1b3d3010eef0cb72604bcb7a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="PPB Operating Log" source="x_sohd3_ppb_operat">a0a441251bfd74107fd2cbfa234bcba7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PPB Operating Log">a0a441251bfd74107fd2cbfa234bcba7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-11 00:40:15</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b3be23471b3d3010eef0cb72604bcb46</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-11 00:40:15</sys_created_on>
+        <sys_id>bad1778b1b3d3010eef0cb72604bcb73</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="PPB Operating Log" source="x_sohd3_ppb_operat">a0a441251bfd74107fd2cbfa234bcba7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PPB Operating Log">a0a441251bfd74107fd2cbfa234bcba7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-11 00:40:15</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_b3be23471b3d3010eef0cb72604bcb46"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_b3be23471b3d3010eef0cb72604bcb46"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_b3be23471b3d3010eef0cb72604bcb46"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=b3be23471b3d3010eef0cb72604bcb46^sys_idNOT INc6a3b78f1b3d3010eef0cb72604bcb5d"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerUniqueChange</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"c6a3b78f1b3d3010eef0cb72604bcb5d","name":"plan","plan_signature":null}}</plan>
+        <plan_id>b3be23471b3d3010eef0cb72604bcb46</plan_id>
+        <snapshot>561fb2e01b16b8107fd2cbfa234bcb95</snapshot>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-11 00:48:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c6a3b78f1b3d3010eef0cb72604bcb5d</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-21 18:41:58</sys_updated_on>
+        <trigger display_value="">ed594b6a1b86b410eef0cb72604bcbcf</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=b3be23471b3d3010eef0cb72604bcb46"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>ppb_log_analyst_assigned_work_flow</internal_name>
+        <label_cache>[{"name":"Updated_1.current.assigned_to.email","label":"Trigger➛PPB Operating Log Record➛Analyst Assigned to➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"4045fc5c-5583-4514-b8b4-59bff8d09db2.email","label":"1➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4045fc5c-5583-4514-b8b4-59bff8d09db2.__action_status__","label":"1➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4045fc5c-5583-4514-b8b4-59bff8d09db2.__dont_treat_as_error__","label":"1➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Updated_1.current","label":"Trigger➛PPB Operating Log Record","reference":"x_sohd3_ppb_operat_ppb_operating_log","reference_display":"PPB Operating Log","type":"reference","base_type":"reference","attributes":{}},{"name":"Updated_1.current.assigned_to","label":"Trigger➛PPB Operating Log Record➛Analyst Assigned to","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_sohd3_ppb_operat_ppb_operating_log","column_name":"assigned_to"},{"name":"Updated_1.current.number","label":"Trigger➛PPB Operating Log Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_sohd3_ppb_operat_ppb_operating_log","column_name":"number"},{"name":"Updated_1.current.sys_id","label":"Trigger➛PPB Operating Log Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_sohd3_ppb_operat_ppb_operating_log","column_name":"sys_id"}]</label_cache>
+        <master>true</master>
+        <name>PPB Log Analyst Assigned Work Flow</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="PPB Log Analyst Assigned Work Flow">b3be23471b3d3010eef0cb72604bcb46</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-11 00:48:06</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>79a3778f1b3d3010eef0cb72604bcb9e</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="PPB Operating Log">a0a441251bfd74107fd2cbfa234bcba7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-21 18:41:57</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=79a3778f1b3d3010eef0cb72604bcb9e"/>
+    <sys_variable_value action="delete_multiple" query="document_key=79a3778f1b3d3010eef0cb72604bcb9e"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=79a3778f1b3d3010eef0cb72604bcb9e^sys_idNOT IN06a3b78f1b3d3010eef0cb72604bcb15"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment>This only runs when the Analyst assigned changes and for it to be unique</comment>
+        <display_text/>
+        <flow display_value="PPB Log Analyst Assigned Work Flow">79a3778f1b3d3010eef0cb72604bcb9e</flow>
+        <name>Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-11 00:48:07</sys_created_on>
+        <sys_id>06a3b78f1b3d3010eef0cb72604bcb15</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-21 18:41:58</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=06a3b78f1b3d3010eef0cb72604bcb15"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>06a3b78f1b3d3010eef0cb72604bcb15</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-11 00:48:07</sys_created_on>
+        <sys_id>06a3b78f1b3d3010eef0cb72604bcb17</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-11 00:48:07</sys_updated_on>
+        <value>assigned_toVALCHANGES</value>
+        <variable display_value="Condition">bb9adea0c31322002841b63b12d3ae67</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>06a3b78f1b3d3010eef0cb72604bcb15</document_key>
+        <order>101</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-11 00:48:07</sys_created_on>
+        <sys_id>42a3b78f1b3d3010eef0cb72604bcb17</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-11 00:48:07</sys_updated_on>
+        <value>unique_changes</value>
+        <variable display_value="Run Trigger">c19523d8c31932002841b63b12d3aea1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>06a3b78f1b3d3010eef0cb72604bcb15</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-11 00:48:07</sys_created_on>
+        <sys_id>c6a3b78f1b3d3010eef0cb72604bcb17</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-11 00:48:07</sys_updated_on>
+        <value>x_sohd3_ppb_operat_ppb_operating_log</value>
+        <variable display_value="Table">1dda12e0c31322002841b63b12d3aea8</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_bb695e60c31322002841b63b12d3aea5^id=06a3b78f1b3d3010eef0cb72604bcb15"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=79a3778f1b3d3010eef0cb72604bcb9e"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=79a3778f1b3d3010eef0cb72604bcb9e^sys_idNOT INf9a3778f1b3d3010eef0cb72604bcbac"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>79a3778f1b3d3010eef0cb72604bcb9e</id>
+        <name>PPB Log Analyst Assigned Work Flow</name>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-11 00:48:06</sys_created_on>
+        <sys_id>f9a3778f1b3d3010eef0cb72604bcbac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-11 00:48:06</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=f9a3778f1b3d3010eef0cb72604bcbac"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=79a3778f1b3d3010eef0cb72604bcb9e^sys_idNOT IN3da3778f1b3d3010eef0cb72604bcbd5,71a3778f1b3d3010eef0cb72604bcbb0,caa3778f1b3d3010eef0cb72604bcbed"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FD1d594b6aac86b41016e2024056d73e7d,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="PPB Log Analyst Assigned Work Flow">79a3778f1b3d3010eef0cb72604bcb9e</model>
+        <model_id>79a3778f1b3d3010eef0cb72604bcb9e</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_79a3778f1b3d3010eef0cb72604bcb9e</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-11 00:48:06</sys_created_on>
+        <sys_id>3da3778f1b3d3010eef0cb72604bcbd5</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="PPB Operating Log">a0a441251bfd74107fd2cbfa234bcba7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-21 18:41:57</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="PPB Log Analyst Assigned Work Flow">79a3778f1b3d3010eef0cb72604bcb9e</model>
+        <model_id>79a3778f1b3d3010eef0cb72604bcb9e</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_79a3778f1b3d3010eef0cb72604bcb9e</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-11 00:48:06</sys_created_on>
+        <sys_id>71a3778f1b3d3010eef0cb72604bcbb0</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="PPB Operating Log">a0a441251bfd74107fd2cbfa234bcba7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-21 18:41:57</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="PPB Log Analyst Assigned Work Flow">79a3778f1b3d3010eef0cb72604bcb9e</model>
+        <model_id>79a3778f1b3d3010eef0cb72604bcb9e</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_79a3778f1b3d3010eef0cb72604bcb9e</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-11 00:48:07</sys_created_on>
+        <sys_id>caa3778f1b3d3010eef0cb72604bcbed</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="PPB Operating Log">a0a441251bfd74107fd2cbfa234bcba7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-21 18:41:57</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=79a3778f1b3d3010eef0cb72604bcb9e"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=79a3778f1b3d3010eef0cb72604bcb9e"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=79a3778f1b3d3010eef0cb72604bcb9e^sys_idNOT INc2a3b78f1b3d3010eef0cb72604bcb11"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <comment>Sends analyst assigned an email when it gets assigned to the person.</comment>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="PPB Log Analyst Assigned Work Flow">79a3778f1b3d3010eef0cb72604bcb9e</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-11 00:48:07</sys_created_on>
+        <sys_id>c2a3b78f1b3d3010eef0cb72604bcb11</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_scope display_value="PPB Operating Log">a0a441251bfd74107fd2cbfa234bcba7</sys_scope>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-21 18:41:57</sys_updated_on>
+        <ui_id>4045fc5c-5583-4514-b8b4-59bff8d09db2</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c2a3b78f1b3d3010eef0cb72604bcb11"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c2a3b78f1b3d3010eef0cb72604bcb11</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-11 00:48:07</sys_created_on>
+        <sys_id>02a3b78f1b3d3010eef0cb72604bcb15</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-11 00:48:07</sys_updated_on>
+        <value>You have a PPB Log Task assigned to you</value>
+        <variable display_value="Subject">5d806bf4a70323008299b39f087901ec</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c2a3b78f1b3d3010eef0cb72604bcb11</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-11 00:48:07</sys_created_on>
+        <sys_id>46a3b78f1b3d3010eef0cb72604bcb14</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-11 00:48:07</sys_updated_on>
+        <value/>
+        <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c2a3b78f1b3d3010eef0cb72604bcb11</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-11 00:48:07</sys_created_on>
+        <sys_id>4ea3b78f1b3d3010eef0cb72604bcb14</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-11 00:48:07</sys_updated_on>
+        <value>x_sohd3_ppb_operat_ppb_operating_log</value>
+        <variable display_value="Table">19806bf4a70323008299b39f087901d4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=c2a3b78f1b3d3010eef0cb72604bcb11"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>c2a3b78f1b3d3010eef0cb72604bcb11</id>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-11 00:48:07</sys_created_on>
+        <sys_id>8aa3b78f1b3d3010eef0cb72604bcb13</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-11 00:48:07</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>&lt;p data-tinymcerootblock=""&gt;Dear Recipient,&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;A PPB Log is waiting for your review.&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Record ID&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:1bfd28b6-3948-4595-abe4-ea8add7ae051}}"&gt;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:1bfd28b6-3948-4595-abe4-ea8add7ae051}}"&gt;&lt;span class="data-pill-content-container"&gt;Trigger&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;PPB Operating Log Record&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;Number&lt;button id="transform_function_facade_1bfd28b6-3948-4595-abe4-ea8add7ae051" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Go to Link&lt;/p&gt;
+&lt;p class="MsoNormal"&gt;&amp;nbsp;https://hidotdev.service-now.com/nav_to.do?uri=%2Fx_sohd3_ppb_operat_ppb_operating_log.do%3Fsys_id%3D&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:136f13ff-49b7-4457-9253-4bff53e61e93}}"&gt;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:136f13ff-49b7-4457-9253-4bff53e61e93}}"&gt;&lt;span class="data-pill-content-container"&gt;Trigger&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;PPB Operating Log Record&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;Sys ID&lt;button id="transform_function_facade_136f13ff-49b7-4457-9253-4bff53e61e93" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;%26sysparm_record_target%3Dx_sohd3_ppb_operat_ppb_operating_log%26sysparm_record_row%3D6%26sysparm_record_rows%3D6%26sysparm_record_list%3DORDERBYnumber&lt;/p&gt;
+&lt;p class="MsoNormal" style="box-sizing: border-box; margin: 0px 0px 9px; overflow-wrap: break-word; color: #343d47; font-family: OpenSans, SourceSansPro, 'Helvetica Neue', Arial; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="box-sizing: border-box; margin: 0px 0px 9px; overflow-wrap: break-word; color: #343d47; font-family: OpenSans, SourceSansPro, 'Helvetica Neue', Arial; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;" data-tinymcerootblock=""&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="box-sizing: border-box; margin: 0px 0px 9px; overflow-wrap: break-word; color: #343d47; font-family: OpenSans, SourceSansPro, 'Helvetica Neue', Arial; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;" data-tinymcerootblock=""&gt;Regards,&lt;/p&gt;
+&lt;p style="box-sizing: border-box; margin: 0px 0px 9px; overflow-wrap: break-word; color: #343d47; font-family: OpenSans, SourceSansPro, 'Helvetica Neue', Arial; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"&gt;PPB System&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>c2a3b78f1b3d3010eef0cb72604bcb11</id>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-11 00:48:07</sys_created_on>
+        <sys_id>c2a3b78f1b3d3010eef0cb72604bcb14</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-11 00:48:07</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>c2a3b78f1b3d3010eef0cb72604bcb11</id>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-11 00:48:07</sys_created_on>
+        <sys_id>c2a3b78f1b3d3010eef0cb72604bcb13</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-13 19:57:28</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Updated_1.current.assigned_to}} </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>c2a3b78f1b3d3010eef0cb72604bcb11</id>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-11 00:48:07</sys_created_on>
+        <sys_id>4ea3b78f1b3d3010eef0cb72604bcb13</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-11 00:48:07</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>c2a3b78f1b3d3010eef0cb72604bcb11</id>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-11 00:48:07</sys_created_on>
+        <sys_id>02a3b78f1b3d3010eef0cb72604bcb14</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-11 00:48:07</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c2a3b78f1b3d3010eef0cb72604bcb11"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c2a3b78f1b3d3010eef0cb72604bcb11"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=79a3778f1b3d3010eef0cb72604bcb9e"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=79a3778f1b3d3010eef0cb72604bcb9e"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=79a3778f1b3d3010eef0cb72604bcb9e^sys_idNOT IN02a3b78f1b3d3010eef0cb72604bcb18,0ea3b78f1b3d3010eef0cb72604bcb17,8ea3b78f1b3d3010eef0cb72604bcb17"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>79a3778f1b3d3010eef0cb72604bcb9e</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.number}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-11 00:48:07</sys_created_on>
+        <sys_id>02a3b78f1b3d3010eef0cb72604bcb18</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="PPB Operating Log">a0a441251bfd74107fd2cbfa234bcba7</sys_scope>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-11 00:48:07</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>b6d0ca20-5cf0-4302-a402-d7abd31984c1</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>79a3778f1b3d3010eef0cb72604bcb9e</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.sys_id}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-11 00:48:07</sys_created_on>
+        <sys_id>0ea3b78f1b3d3010eef0cb72604bcb17</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="PPB Operating Log">a0a441251bfd74107fd2cbfa234bcba7</sys_scope>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-11 00:48:07</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>136f13ff-49b7-4457-9253-4bff53e61e93</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>79a3778f1b3d3010eef0cb72604bcb9e</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.number}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-11 00:48:07</sys_created_on>
+        <sys_id>8ea3b78f1b3d3010eef0cb72604bcb17</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="PPB Operating Log">a0a441251bfd74107fd2cbfa234bcba7</sys_scope>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-11 00:48:07</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>1bfd28b6-3948-4595-abe4-ea8add7ae051</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=79a3778f1b3d3010eef0cb72604bcb9e"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_79a3778f1b3d3010eef0cb72604bcb9e^sys_idNOT IN75a3778f1b3d3010eef0cb72604bcbd1,8ea3778f1b3d3010eef0cb72604bcbf4,f1a3778f1b3d3010eef0cb72604bcbdd"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_79a3778f1b3d3010eef0cb72604bcb9e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-11 00:48:06</sys_created_on>
+        <sys_id>75a3778f1b3d3010eef0cb72604bcbd1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="PPB Operating Log" source="x_sohd3_ppb_operat">a0a441251bfd74107fd2cbfa234bcba7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PPB Operating Log">a0a441251bfd74107fd2cbfa234bcba7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-11 00:48:06</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_79a3778f1b3d3010eef0cb72604bcb9e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-11 00:48:07</sys_created_on>
+        <sys_id>8ea3778f1b3d3010eef0cb72604bcbf4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="PPB Operating Log" source="x_sohd3_ppb_operat">a0a441251bfd74107fd2cbfa234bcba7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PPB Operating Log">a0a441251bfd74107fd2cbfa234bcba7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-11 00:48:07</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_79a3778f1b3d3010eef0cb72604bcb9e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-11 00:48:06</sys_created_on>
+        <sys_id>f1a3778f1b3d3010eef0cb72604bcbdd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="PPB Operating Log" source="x_sohd3_ppb_operat">a0a441251bfd74107fd2cbfa234bcba7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PPB Operating Log">a0a441251bfd74107fd2cbfa234bcba7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-11 00:48:06</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_79a3778f1b3d3010eef0cb72604bcb9e"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_79a3778f1b3d3010eef0cb72604bcb9e"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_79a3778f1b3d3010eef0cb72604bcb9e"/>
+    <sys_hub_flow action="update">
+        <sys_id>b3be23471b3d3010eef0cb72604bcb46</sys_id>
+        <latest_snapshot>79a3778f1b3d3010eef0cb72604bcb9e</latest_snapshot>
+    </sys_hub_flow>
+</record_update>

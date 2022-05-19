@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="ppb_log_leads_group" label="PPB Log Leads Group" language="en" table="x_sohd3_ppb_operat_ppb_operating_log">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>ppb_log_leads_group</element>
+            <help/>
+            <hint/>
+            <label>PPB Log Leads Group</label>
+            <language>en</language>
+            <name>x_sohd3_ppb_operat_ppb_operating_log</name>
+            <plural>PPB Log Leads Groups</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>charles_admin</sys_created_by>
+            <sys_created_on>2021-08-10 23:39:13</sys_created_on>
+            <sys_id>b8e36f431bf93010eef0cb72604bcbc4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>PPB Log Leads Group</sys_name>
+            <sys_package display_value="PPB Operating Log" source="x_sohd3_ppb_operat">a0a441251bfd74107fd2cbfa234bcba7</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="PPB Operating Log">a0a441251bfd74107fd2cbfa234bcba7</sys_scope>
+            <sys_update_name>sys_documentation_x_sohd3_ppb_operat_ppb_operating_log_ppb_log_leads_group_en</sys_update_name>
+            <sys_updated_by>charles_admin</sys_updated_by>
+            <sys_updated_on>2021-08-10 23:39:13</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

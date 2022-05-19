@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-05 20:29:21</sys_created_on>
+        <sys_id>f278c12d1bfd74107fd2cbfa234bcb7a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_sohd3_ppb_operat_ppb_operating_log.x_sohd3_ppb_operat.ppb owners</sys_name>
+        <sys_package display_value="PPB Operating Log" source="x_sohd3_ppb_operat">a0a441251bfd74107fd2cbfa234bcba7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PPB Operating Log">a0a441251bfd74107fd2cbfa234bcba7</sys_scope>
+        <sys_security_acl display_value="x_sohd3_ppb_operat_ppb_operating_log">fa78c12d1bfd74107fd2cbfa234bcb76</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_f278c12d1bfd74107fd2cbfa234bcb7a</sys_update_name>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-05 20:29:21</sys_updated_on>
+        <sys_user_role display_value="x_sohd3_ppb_operat.ppb owners" name="x_sohd3_ppb_operat.ppb owners">3fb6c9691bfd74107fd2cbfa234bcb7e</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

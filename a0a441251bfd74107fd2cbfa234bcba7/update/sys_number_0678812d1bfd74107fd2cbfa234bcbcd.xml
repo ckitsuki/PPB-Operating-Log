@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+    <sys_number action="INSERT_OR_UPDATE">
+        <category display_value="" name="x_sohd3_ppb_operat_ppb_operating_log">x_sohd3_ppb_operat_ppb_operating_log</category>
+        <maximum_digits>12</maximum_digits>
+        <number>1000</number>
+        <prefix>PPBLOG</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-05 20:29:18</sys_created_on>
+        <sys_id>0678812d1bfd74107fd2cbfa234bcbcd</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>PPBLOG</sys_name>
+        <sys_package display_value="PPB Operating Log" source="x_sohd3_ppb_operat">a0a441251bfd74107fd2cbfa234bcba7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PPB Operating Log">a0a441251bfd74107fd2cbfa234bcba7</sys_scope>
+        <sys_update_name>sys_number_0678812d1bfd74107fd2cbfa234bcbcd</sys_update_name>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-06 01:41:09</sys_updated_on>
+    </sys_number>
+</record_update>

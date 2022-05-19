@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_item_parameter">
+    <sys_sg_item_parameter action="INSERT_OR_UPDATE">
+        <default_value/>
+        <name>PPB Operating Log description</name>
+        <parent>5b88452d1bfd74107fd2cbfa234bcb6e</parent>
+        <parent_table>sys_sg_write_back_action_item</parent_table>
+        <sys_class_name>sys_sg_item_parameter</sys_class_name>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-05 20:29:40</sys_created_on>
+        <sys_id>1388452d1bfd74107fd2cbfa234bcb71</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>PPB Operating Log description</sys_name>
+        <sys_package display_value="PPB Operating Log" source="x_sohd3_ppb_operat">a0a441251bfd74107fd2cbfa234bcba7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PPB Operating Log">a0a441251bfd74107fd2cbfa234bcba7</sys_scope>
+        <sys_update_name>sys_sg_item_parameter_1388452d1bfd74107fd2cbfa234bcb71</sys_update_name>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-05 20:29:40</sys_updated_on>
+        <type>string</type>
+    </sys_sg_item_parameter>
+</record_update>

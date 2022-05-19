@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>This section is used in the Contract Information tab to calculate totals that use currency variable types.   Actual sums are stored.  The values are not formula fields.</description>
+        <field>u_calculate_totals_1</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>PPB Contract Calculations for combined</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+    // Purpose:  Code is used to calculate field in the PPB Log contract section.  
+    // Status :  In development.
+	// Method :  When the calculation field u_calculate_totals_1 is set to true 
+	//           the totals will be calculated.
+    //
+    // PPB Onload in the client script section will set the boolean value for Calculate Totals to false.
+	// Note, because currency format are String types you need to perfer a parseFloat to get a numeric
+	// value for calculations.
+	// You will also need to convert values you want in  fields back to string format toString() 
+	// before placing it back in currency.
+	//
+	//
+    var CalculateTotals = g_form.getBooleanValue('u_calculate_totals_1');
+    //Checks to see when onChange if he CalculateTotals check box is checked.  If it is then, totals will be calculated.
+    if (CalculateTotals) {
+		//Extracting values and converting to float.
+        //substring(4) is used to remove currency indicators
+		//Decided to seperate this into value and new variable descriptive variable name to 
+		//show how the value in steps.  Could have combine these three into one statement also.
+        var value = g_form.getValue('u_state_share_basic_1').substring(4);
+        //replace here is to remove commas.
+        value = value.replace(/,/g, '');
+        var state_share_basic = parseFloat(value);
+       
+        value = g_form.getValue('u_federal_share_basic_1').substring(4);
+        value = value.replace(/,/g, '');
+        var federal_share_basic = parseFloat(value);
+
+        value = g_form.getValue('u_state_share_extra_1').substring(4);
+        value = value.replace(/,/g, '');
+        var state_share_extra = parseFloat(value);
+
+        value = g_form.getValue('u_federal_share_extra_1').substring(4);
+        value = value.replace(/,/g, '');
+        var federal_share_extra = parseFloat(value);
+
+        value = g_form.getValue('u_state_share_other_1').substring(4);
+        value = value.replace(/,/g, '');
+        var state_share_other = parseFloat(value);
+
+        value = g_form.getValue('u_federal_share_other_1').substring(4);
+        value = value.replace(/,/g, '');
+        var federal_share_other = parseFloat(value);
+		
+		//Summing up totals to put in readable fields
+        var combined_total_basic = state_share_basic + federal_share_basic;
+        var combined_total_extra = state_share_extra + federal_share_extra;
+        var combined_total_other = state_share_other + federal_share_other;
+        var state_share_total = state_share_basic + state_share_extra + state_share_other;
+        var federal_share_total = federal_share_basic + federal_share_extra + federal_share_other;
+        var combined_total = combined_total_basic + combined_total_extra + combined_total_other;
+
+		//This is used to convert the float data to string and load data back into column variable
+		//in table.
+        g_form.setValue('u_combined_total_basic_1', combined_total_basic.toString());
+        g_form.setValue('u_combined_total_extra_1', combined_total_extra.toString());
+        g_form.setValue('u_combined_total_other_1', combined_total_other.toString());
+//		g_form.setReadOnly('u_state_share_total_1',false);
+        g_form.setValue('u_state_share_total_1', state_share_total.toString());
+//		g_form.save();
+//		g_form.setReadOnly('u_state_share_total_1',true);
+        g_form.setValue('u_federal_share_total_1', federal_share_total.toString());
+        g_form.setValue('u_combined_total_1', combined_total.toString());
+    }
+
+    // debugger statements, These are used for debugging purposes so they are commented out until needed.
+    //var CalculateTotals=g_form.getBooleanValue('u_boolean_1');
+    //alert(getMessage('Test before change value u_boolean_1  '+ CalculateTotals));
+    //g_form.setValue('u_string_3',"Dsm 2343224");
+    //alert(getMessage('Test change value u_boolean_1  '+ CalculateTotals));
+
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-09 03:36:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8b86cea21bb5b4107fd2cbfa234bcb90</sys_id>
+        <sys_mod_count>111</sys_mod_count>
+        <sys_name>PPB Contract Calculations for combined</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="PPB Operating Log" source="x_sohd3_ppb_operat">a0a441251bfd74107fd2cbfa234bcba7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PPB Operating Log">a0a441251bfd74107fd2cbfa234bcba7</sys_scope>
+        <sys_update_name>sys_script_client_8b86cea21bb5b4107fd2cbfa234bcb90</sys_update_name>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2022-03-22 00:53:48</sys_updated_on>
+        <table>x_sohd3_ppb_operat_ppb_operating_log</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

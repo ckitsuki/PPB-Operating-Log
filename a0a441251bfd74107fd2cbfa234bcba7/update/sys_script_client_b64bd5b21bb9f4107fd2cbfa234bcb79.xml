@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>u_boolean_8</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>PPB  Onload</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+    // Purpose: All below is executed during loads
+    // Status:  In development
+	// Method:  On load is much like the on change.  It will display varibles or not display ones that
+	//          that are tied back to request_category selected.
+    //          Sets calculate checkbox to false. Unchecks the Calculate Total box.
+    //
+    // This is the calculate total check box which is set to false when loading.  Once data is entered
+    // user can check box to active calculation using PPB Contract calculations for combined.
+    //
+    g_form.setValue('u_calculate_totals_1', false);
+    //
+    // Purpose: To show or not show fields or tab based on request category
+    //
+
+    var selection = g_form.getValue('request_category');
+    //
+    // Show Contract Information tab only if the Request Category is either Contracts or Federal Form
+    //
+    if ((selection === 'contracts') || (selection === 'federal_form')) {
+        g_form.setSectionDisplay('contract_information', true);
+    } else g_form.setSectionDisplay('contract_information', false);
+    //
+    // The following will either display or note display certain fields based on selection
+    //note gform.setDisplay contains the varible name in quotes and a true or false.  
+    //true for dipslay and false for no display.
+    //
+    if ((selection === 'b_f_gov_request_and_or_submittals') || (selection === 'dsm_updates') || (selection === 'legislative_inquiries_and_or_submittals') || (selection === 'others') || (selection === 'personnel_request_and_or_submittals') || (selection === 'special_studies') || (selection === 'reorg_proposals')) {
+        g_form.setDisplay('u_program_id_1', false);
+        g_form.setDisplay('u_appropriation_fund_symbol_1', false);
+        g_form.setDisplay('u_object_code_1', false);
+        g_form.setDisplay('u_amount_1', false);
+        g_form.setDisplay('u_contract_no_1', false);
+        if (selection ==='reorg_proposals') g_form.setDisplay('u_approved_date_1', true);
+        else g_form.setDisplay('u_approved_date_1', false);
+        g_form.setDisplay('u_reference_1', false);
+    } 
+	// This is not needed here as it is loading only and not on change.
+	//else {
+     //   g_form.setDisplay('u_program_id_1', true);
+     //   g_form.setDisplay('u_appropriation_fund_symbol_1', true);
+     //   g_form.setDisplay('u_object_code_1', true);
+     //   g_form.setDisplay('u_amount_1', true);
+     //   g_form.setDisplay('u_approved_date_1', true);
+      //  g_form.setDisplay('u_reference_1', true);
+   // }
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>charles_admin</sys_created_by>
+        <sys_created_on>2021-08-09 19:06:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b64bd5b21bb9f4107fd2cbfa234bcb79</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_name>PPB  Onload</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="PPB Operating Log" source="x_sohd3_ppb_operat">a0a441251bfd74107fd2cbfa234bcba7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PPB Operating Log">a0a441251bfd74107fd2cbfa234bcba7</sys_scope>
+        <sys_update_name>sys_script_client_b64bd5b21bb9f4107fd2cbfa234bcb79</sys_update_name>
+        <sys_updated_by>charles_admin</sys_updated_by>
+        <sys_updated_on>2021-08-21 18:50:49</sys_updated_on>
+        <table>x_sohd3_ppb_operat_ppb_operating_log</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

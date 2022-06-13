@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element audit="true" extends="task" label="PPB Operating Log" max_length="40" name="x_sohd3_ppb_operat_ppb_operating_log" sizeclass="6" type="collection">
+        <element attributes="encode_utf8=false,ref_decoration_disabled=true" label="PPB Analyst Assigned" max_length="32" name="ppb_analyst_assigned" reference="sys_user" type="reference"/>
         <element default="PPB Log Leads" label="PPB Log Leads Group" max_length="32" name="ppb_log_leads_group" reference="sys_user_group" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Request Category" max_length="40" name="request_category" type="choice">
             <choice>

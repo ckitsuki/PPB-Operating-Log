@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="ppb_analyst_assigned" label="PPB Analyst Assigned" language="en" table="x_sohd3_ppb_operat_ppb_operating_log">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>ppb_analyst_assigned</element>
+            <help/>
+            <hint/>
+            <label>PPB Analyst Assigned</label>
+            <language>en</language>
+            <name>x_sohd3_ppb_operat_ppb_operating_log</name>
+            <plural>PPB Analyst Assigned</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>charles_admin</sys_created_by>
+            <sys_created_on>2022-06-08 17:32:16</sys_created_on>
+            <sys_id>f900255c1bcc1910253a65f2604bcb44</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>PPB Analyst Assigned</sys_name>
+            <sys_package display_value="PPB Operating Log" source="x_sohd3_ppb_operat">a0a441251bfd74107fd2cbfa234bcba7</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="PPB Operating Log">a0a441251bfd74107fd2cbfa234bcba7</sys_scope>
+            <sys_update_name>sys_documentation_x_sohd3_ppb_operat_ppb_operating_log_ppb_analyst_assigned_en</sys_update_name>
+            <sys_updated_by>charles_admin</sys_updated_by>
+            <sys_updated_on>2022-06-08 19:04:08</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
